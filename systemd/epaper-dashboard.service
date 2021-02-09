@@ -1,0 +1,13 @@
+[Unit]
+Description=epaper gpio dashboard
+After=default.target
+
+[Service]
+WorkingDirectory=/home/pi/epaper-dashboard/
+ExecStart=/usr/bin/python3 dashboard.py
+
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target

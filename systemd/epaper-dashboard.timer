@@ -1,8 +1,9 @@
 [Unit]
-Description=Run Dashboard Every 10 Minutes
+Description=Run Dashboard Every 15 Minutes
 
 [Timer]
 OnBootSec=10sec
+OnCalendar=*:*:0,15,30,45
 
 [Install]
 WantedBy=timers.target
